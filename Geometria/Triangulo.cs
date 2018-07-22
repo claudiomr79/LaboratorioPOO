@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
 namespace Geometria
 {
     public class Triangulo
@@ -22,14 +23,15 @@ namespace Geometria
             get { return m_altura; }
         }
 
-        public void CalcularPerimetro()
+        public double CalcularPerimetro()
         {
-            throw new System.NotImplementedException();
+            double hip = Math.Sqrt (Math.Pow(Base, 2) + Math.Pow(Altura, 2));
+            return hip + Base + Altura;
         }
 
-        public void CalcularSuperficie()
+        public double CalcularSuperficie()
         {
-            throw new System.NotImplementedException();
+            return (Base * Altura) / 2; 
         }
     }
 }

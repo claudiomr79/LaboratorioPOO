@@ -7,22 +7,15 @@ namespace Geometria
 {
     public class Cuadrado: Rectangulo
     {
-        private double m_lado1;
-        private double m_lado2;
+        private double m_lado;
+        
 
-        public double Lado1
+        public double Lado
         {
-          set { m_lado1 = value; }
-          get { return m_lado1; }  
+          set { m_lado = value; }
+          get { return m_lado; }  
 
         }
 
-        public double Lado2
-        {
-
-            set { m_lado2 = value; }
-            get { return m_lado2; }
-
-        }
     }
 }
